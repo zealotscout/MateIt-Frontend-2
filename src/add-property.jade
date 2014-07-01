@@ -20,7 +20,7 @@ html
 		script(type="text/javascript",src="http://code.jquery.com/jquery.min.js")
 		script(src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js")
 
-	body
+	bodyf
 		include partials/header.jade
 
 
@@ -37,6 +37,7 @@ html
 					a(href='#')
 						i.fa.fa-building-o#sidebar
 					img(src="imgs/triangle.png")#triangle.property
+			div#sidebar-wrapper2
 			div.row.add-property#add-property	
 				div.col-md-4	
 					div.navbar.overcontent
@@ -72,7 +73,8 @@ html
 										i.fa.fa-building-o			Apartamento
 									a(href='#') 
 										i.fa.fa-home			Casa
-									a(href='#') Otro
+									a(href='#') 
+										i.fa.fa-th 		Otro
 
 					div.col-md-4
 						p Tipo de cuarto
@@ -83,7 +85,7 @@ html
 							ul.dropdown-menu(role='menu',aria-labelledby='dropdown-menu')
 								li
 									a(href='#') 
-										i.fa.fa-users			Privado
+										i.fa.fa-user			Privado
 									a(href='#')
 										i.fa.fa-users			Compartido
 					div.col-md-4
@@ -117,7 +119,7 @@ html
 						
 						div.location
 							br
-							
+							div.col-md-5
 							input(type ="text").form-control(placeholder="Plaza Centenario")#location
 							div.jumbotron	
 								div.jumbotron-photo	

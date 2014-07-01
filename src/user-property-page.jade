@@ -37,6 +37,7 @@ html
 					a(href='#')
 						i.fa.fa-building-o#sidebar
 					img(src="imgs/triangle.png")#triangle.property
+			div#sidebar-wrapper2		
 			div.row.add-property#add-property	
 				div.col-md-4	
 					div.navbar.overcontent
@@ -83,8 +84,10 @@ html
 								span.caret
 							ul.dropdown-menu(role='menu',aria-labelledby='dropdown-menu')
 								li
-									a(href='#') Privado
-									a(href='#') Compartido
+									a(href='#') 
+										i.fa.fa-user    Privado
+									a(href='#') 
+										i.fa.fa-users       Compartido
 					div.col-md-4
 						p Precio
 						div.btn-group#add-property
@@ -117,7 +120,7 @@ html
 						
 						div.location
 							br
-							
+							div.col-md-5
 							input(type ="text").form-control(placeholder="Plaza Centenario")#location
 							div.jumbotron	
 								div.jumbotron-photo	
